@@ -1,0 +1,116 @@
+
+body { max-width: 1400px;
+	padding: 0;
+	box-sizing: border-box;
+	margin:auto;
+	text-align: center;
+	color: darkblue;
+	font-family:Helvetica;
+   padding: 20px;
+}
+.container
+{
+	max-width: 1200px;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+}
+.header{
+	float: left;
+}
+#vegetables, #drinks, #Compayments, #Cars{
+width: 35%;
+height: 400px;
+overflow: hidden;
+}
+
+input, button {
+	width: 70px;
+	height: 20px;
+	border: 1px solid darkblue;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.input{
+	width: 200px;
+}
+button{
+	width: 60px;
+	height: 30px;
+	cursor: pointer;
+}
+#vegetablesNumber, #drinksNumber,
+ #CompaymentsNumber, #CarsNumber{
+	display: none;
+}
+
+img:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  border-radius: 70%;
+ transition: all 1s ease-in;
+
+}
+img{
+
+	width: 300px;
+	cursor: pointer;
+	 transition: all 1s ease-out;
+}
+#total, #month, #weeks{
+	display: inline-block;
+	border-radius: 5px;
+	border:1px solid darkblue;
+	max-width: 100px;
+	height: 50px;
+	font-size: 30px;
+	background: lightblue;
+	padding: 10px;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+#month, #weeks{
+
+	display: none;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: lightblue;
+  border: none;
+  color: darkblue;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  height: 50px;
+}
+.button span {
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+ opacity: 0;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+}
+.times{
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
