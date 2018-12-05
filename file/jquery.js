@@ -14,13 +14,80 @@ $(document).ready(function(){
     });
 });
 
-
-
 $(document).ready(function(){
     $(".button2").click(function(){
         $("#month").show(500);
     });
      $(".button3").click(function(){
         $("#weeks").show(500);
+    });
+});
+
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#vegetables").animate({
+            top:"300px"
+        },1000);
+        $("#drinks").animate({
+            left:"300px"
+        },1000);
+        $("#Cars").animate({
+            left:"700px"
+        },1000);
+        $("#Compayments").animate({
+            top:"10px"
+        },1000);
+    });
+});
+
+$(document).ready(function(){
+    $("#button2").click(function(){
+        $("#vegetables").animate({
+           left:"700px"
+        },1000);
+        $("#drinks").animate({
+            top:"300px"
+        },1000);
+        $("#Cars").animate({
+            top:"10px"
+        },1000);
+        $("#Compayments").animate({
+            left:"300px"
+        },1000);
+    });
+});
+
+$(document).ready(function(){
+    $("#button4").click(function(){
+        $("#vegetables").animate({
+           top:"10px"
+        },1000);
+        $("#drinks").animate({
+            left:"700px"
+        },1000);
+        $("#Cars").animate({
+            left:"300px"
+        },1000);
+        $("#Compayments").animate({
+           top:"300px"
+        },1000);
+    });
+});
+
+
+$(document).ready(function(){
+    $("#button3").click(function(){
+        $("#vegetables").animate({
+           left:"300px"
+        },1000);
+        $("#drinks").animate({
+            top:"10px"
+        },1000);
+        $("#Cars").animate({
+            top:"300px"
+        },1000);
+        $("#Compayments").animate({
+           left:"700px"
+        },1000);
     });
 });

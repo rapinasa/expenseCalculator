@@ -1,5 +1,18 @@
 
 
+	var todoList = [];
+	document.getElementByClassName("button1").onclick = function(){
+		var sum = document.getElementById("total").innerHTML;
+		var temp = {};
+		temp.price = sum;
+		var i = todoList.length;
+		todoList[i] = temp;
+		console.log(todoList);
+		Calculator();
+		localStorage.setItem("price", JSON.stringify(todoList));
+	};
+
+
 function Calculator() {
 var a = document.getElementById("moneyVegetable1").value;
 var b = document.getElementById("moneyVegetable2").value;
@@ -19,3 +32,6 @@ var z = Number(a) + Number(b) + Number(c) + Number(d) + Number(e) + Number(f) + 
 
 
 
+    /*localStorage.setItem("keys", z);
+var localValue = localStorage.getItem("keys");
+document.getElementById("total").innerHTML = localValue;*/

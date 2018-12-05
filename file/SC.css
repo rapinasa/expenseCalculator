@@ -11,19 +11,36 @@ body { max-width: 1400px;
 .container
 {
 	max-width: 1200px;
-	display: flex;
-	justify-content:space-around;
-	flex-wrap: wrap;
+	position: relative;
 }
 .header{
 	float: left;
+	height: 2500px;
+
 }
 #vegetables, #drinks, #Compayments, #Cars{
 width: 35%;
-height: 400px;
+height: 300px;
 overflow: hidden;
+float: left;
+position: absolute;
 }
-
+#vegetables{
+	left: 300px;
+	top: 10px;
+}
+#drinks{
+	left: 700px;
+	top: 10px;
+}
+#Cars{
+	left: 300px;
+	top: 300px;
+}
+#Compayments{
+	left: 700px;
+	top: 300px;
+}
 input, button {
 	width: 70px;
 	height: 20px;
