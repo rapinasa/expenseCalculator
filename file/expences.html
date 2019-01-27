@@ -8,8 +8,7 @@
 		<link type="text/css" rel="stylesheet" href="SC.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="jquery.js"></script>
-     <script src="jscript.js"></script>
+   
     </head>
 <body>
 <div class="header">
@@ -57,36 +56,7 @@
   
 
 </div>
-<script>
-	var myArr = [];
-function myFunction(){
-  var a = document.getElementById("money1").value;
-
-myArr.push(parseInt(a));
-
-var z = "";
-for (i = 0; i < myArr.length;i++){
-z = z + myArr[i]+"<br/>";
-}
-  saveArr();
-}
-function getSum(total, num){
-  return total + num;
-  saveArr();
-}
-function Counting(item){
-  document.getElementById("total1").innerHTML = myArr.reduce(getSum);
-}
-function saveArr(){
-var JSONReady = JSON.stringify(myArr);
-localStorage.setItem("myKey", JSONReady);
-}
-function getArr(){
-var JSONReady = localStorage.getItem("myKey");
-myArr = JSON.parse(JSONReady);
-}
-getArr();
-Counting();
-</script>
+  <script type="text/javascript" src="jquery.js"></script>
+     <script  type="text/javascript"  src="jscript.js"></script>
 </body>
 </html>>
