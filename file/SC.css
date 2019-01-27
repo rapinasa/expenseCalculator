@@ -74,14 +74,15 @@ img:hover {
 img{
 
 	width: 300px;
+	height: 200px;
 	cursor: pointer;
 	 transition: all 1s ease-out;
 }
-#total, #month, #weeks{
+#total1, #month, #weeks{
 	display: inline-block;
 	border-radius: 5px;
 	border:1px solid darkblue;
-	max-width: 100px;
+	max-width: 200px;
 	height: 50px;
 	font-size: 30px;
 	background: lightblue;

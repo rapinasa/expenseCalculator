@@ -1,18 +1,14 @@
 
 
-	var todoList = [];
-	document.getElementByClassName("button1").onclick = function(){
-		var sum = document.getElementById("total").innerHTML;
-		var temp = {};
-		temp.price = sum;
-		var i = todoList.length;
-		todoList[i] = temp;
-		console.log(todoList);
-		Calculator();
-		localStorage.setItem("price", JSON.stringify(todoList));
-	};
 
 
+
+
+
+
+
+
+/*
 function Calculator() {
 var a = document.getElementById("moneyVegetable1").value;
 var b = document.getElementById("moneyVegetable2").value;
@@ -26,9 +22,20 @@ var j = document.getElementById("moneyCompayments3").value;
 var k = document.getElementById("moneyCars1").value;
 var l = document.getElementById("moneyCars2").value;
 var m = document.getElementById("moneyCars3").value;
-var z = Number(a) + Number(b) + Number(c) + Number(d) + Number(e) + Number(f) + Number(g) + Number(h) + Number(j) + Number(k) + Number(l) + Number(m);
+var z = Number(a) + Number(b) + Number(c);
     document.getElementById("total").innerHTML=z;
-};
+     document.getElementById("moneyVegetable1").value = "";
+      document.getElementById("moneyVegetable2").value = "";
+       document.getElementById("moneyVegetable3").value = "";
+   };
+
+       /*var Obj = {
+       }
+        var serialObj = JSON.stringify(z);
+ localStorage.setItem("myKey", serialObj);
+ var returnObj = JSON.parse(localStorage.getItem("myKey"));
+};*/
+ 
 
 
 

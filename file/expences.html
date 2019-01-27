@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Expences</title>
 		<link type="text/css" rel="stylesheet" href="SC.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="jquery.js"></script>
      <script src="jscript.js"></script>
@@ -13,10 +14,9 @@
 <body>
 <div class="header">
 <h1>Calculator</h1>
-<p>Total amount of money: <span id="total"></span></p>
+<p>Total amount of money: <span id="total1"></span></p>
 
 <div class="times">
-<div><button class="button button1"><span>Save</span></button></div>
 <div><button class="button button2"><span>Month</span></button><span id="month"></span></div>
 <div><button class="button button3"><span>Week</span></button><span id="weeks"></div>
 </div>
@@ -25,40 +25,68 @@
 	<div id="vegetables">
 		  <img src="../image/vegetables.png" alt="vegetables">
 		  <div id="vegetablesNumber">
-		  <input id="moneyVegetable1" type="number" name="vegetables" placeholder="Goods-1"  autofocus>
-          <input id="moneyVegetable2" type="number" name="vegetables" placeholder="Goods-2" autofocus>
-          <input id="moneyVegetable3"  type="number" name="vegetables" placeholder="Goods-3" autofocus>
-		   <button id="button1" onclick="Calculator()">Add</button>
+		  <input id="money1" type="number" name="vegetables" placeholder="Goods-1"  autofocus>
+		  <button onclick="myFunction()"> <i class="fa fa-plus"></i></button>
+		   <button id="button1" onclick="Counting()">Add</button>
 		   </div>
 	</div>
 	<div id="drinks">
 		  <img src="../image/drinks.png" alt="drinks">
 		  <div id="drinksNumber">
-		  <input id="moneyDrinks1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
-		  <input id="moneyDrinks2" type="number" name="vegetables" placeholder="Goods-2" autofocus>
-		  <input id="moneyDrinks3" type="number" name="vegetables" placeholder="Goods-3" autofocus>
-		   <button id="button2" onclick="Calculator()">Add</button>
+		  <input id="money1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
+		  <button onclick="myFunction()"> <i class="fa fa-plus"></i></button>
+		   <button id="button2" onclick="Counting()">Add</button>
          </div>
     </div>
     <div id="Cars">
 		  <img src="../image/Car.png" alt="Cars">
 		  <div id="CarsNumber">
-		  <input id="moneyCars1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
-		  <input id="moneyCars2" type="number" name="vegetables" placeholder="Goods-2" autofocus>
-		  <input id="moneyCars3" type="number" name="vegetables" placeholder="Goods-3" autofocus>
-		   <button id="button3" onclick="Calculator()">Add</button>
+		  <input id="money1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
+		  <button onclick="myFunction()"> <i class="fa fa-plus"></i></button>
+		   <button id="button3" onclick="Counting()">Add</button>
     </div>
   </div>
     <div id="Compayments">
 		  <img src="../image/Compayments.png" alt="Compayments">
 		  <div id="CompaymentsNumber">
-		  <input id="moneyCompayments1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
-		  <input id="moneyCompayments2" type="number" name="vegetables" placeholder="Goods-2" autofocus>
-		  <input id="moneyCompayments3" type="number" name="vegetables" placeholder="Goods-3" autofocus>
-		   <button id="button4" onclick="Calculator()">Add</button>
+		  <input id="money1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
+		  <button onclick="myFunction()"> <i class="fa fa-plus"></i></button>
+		   <button id="button4" onclick="Counting()">Add</button>
         </div>
      </div>
+  
 
 </div>
+<script>
+	var myArr = [];
+function myFunction(){
+  var a = document.getElementById("money1").value;
+
+myArr.push(parseInt(a));
+
+var z = "";
+for (i = 0; i < myArr.length;i++){
+z = z + myArr[i]+"<br/>";
+}
+  saveArr();
+}
+function getSum(total, num){
+  return total + num;
+  saveArr();
+}
+function Counting(item){
+  document.getElementById("total1").innerHTML = myArr.reduce(getSum);
+}
+function saveArr(){
+var JSONReady = JSON.stringify(myArr);
+localStorage.setItem("myKey", JSONReady);
+}
+function getArr(){
+var JSONReady = localStorage.getItem("myKey");
+myArr = JSON.parse(JSONReady);
+}
+getArr();
+Counting();
+</script>
 </body>
 </html>>
