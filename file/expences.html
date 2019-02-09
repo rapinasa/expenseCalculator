@@ -7,56 +7,62 @@
 		<title>Expences</title>
 		<link type="text/css" rel="stylesheet" href="SC.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
 <body>
-<div class="header">
-<h1>Calculator</h1>
-<p>Total amount of money: <span id="total1"></span></p>
-
-<div class="times">
-<div><button class="button button2"><span>Month</span></button><span id="month"></span></div>
-<div><button class="button button3"><span>Week</span></button><span id="weeks"></div>
-</div>
-</div>
-  <div class="container">
-	<div id="vegetables">
-		  <img src="../image/vegetables.png" alt="vegetables">
-		  <div id="vegetablesNumber">
-		  <input id="money1" type="number" name="vegetables" placeholder="Goods-1"  autofocus>
-		  <button onclick="myFunction()"> <i class="fa fa-plus"></i></button>
-		   <button id="button1" onclick="Counting()">Add</button>
-		   </div>
+    <div class="header">
+		<h1>Calculator</h1>
+		<p>Total amount of money: <span id="total"></span></p>
+		<p>Meals expences: <span id="mealsCart"></span></p>
+		<p>Drinks and party expences: <span id="drinksCart"></span></p>
+		<p>Compayments: <span id="transportCart"></span></p>
+		<p>Transportation: <span id="compaymentsCart"></span></p>
+      <div class="times">
+	      <div>
+	      	<button class="button button2"><span>Month</span></button>
+	      	<span id="month"></span>
+	      </div>
+	      <div>
+	    	<button class="button button3"><span>Week</span></button>
+		    <span id="weeks"></span>
+	      </div>
+	  </div>
 	</div>
-	<div id="drinks">
-		  <img src="../image/drinks.png" alt="drinks">
-		  <div id="drinksNumber">
-		  <input id="money1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
-		  <button onclick="myFunction()"> <i class="fa fa-plus"></i></button>
-		   <button id="button2" onclick="Counting()">Add</button>
-         </div>
+   <div class="container">
+		<div id="meals">
+		    <img src="../image/vegetables.png" alt="meals">
+			  <div id="mealsNumber">
+				  <input onchange="meals=this.value" placeholder="Meals";>
+				  <button onclick="myFunction1()"> <i class="fa fa-plus"></i></button>
+				  <button id="button1" onclick="calculate1()">Add</button>
+			  </div>
+		</div>
+	    <div id="drinks">
+		    <img src="../image/drinks.png" alt="drinks">
+			  <div id="drinksNumber">
+				  <input onchange="drinks=this.value" placeholder="Drinks">
+				  <button onclick="myFunction2()"> <i class="fa fa-plus"></i></button>
+				  <button id="button2" onclick="calculate2()">Add</button>
+	          </div>
+	    </div>
+	    <div id="transport">
+		    <img src="../image/Car.png" alt="cars">
+			  <div id="transportNumber">
+				  <input onchange="transport=this.value" placeholder="Transport">
+				  <button onclick="myFunction3()"> <i class="fa fa-plus"></i></button>
+				  <button id="button3" onclick="calculate3()">Add</button>
+	          </div>
+	    </div>
+	    <div id="compayments">
+			<img src="../image/Compayments.png" alt="compayments">
+			  <div id="compaymentsNumber">
+				  <input onchange="compayments=this.value" placeholder="Payments">
+				  <button onclick="myFunction4()"> <i class="fa fa-plus"></i></button>
+				  <button id="button4" onclick="calculate4()">Add</button>
+	          </div>
+	    </div>
     </div>
-    <div id="Cars">
-		  <img src="../image/Car.png" alt="Cars">
-		  <div id="CarsNumber">
-		  <input id="money1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
-		  <button onclick="myFunction()"> <i class="fa fa-plus"></i></button>
-		   <button id="button3" onclick="Counting()">Add</button>
-    </div>
-  </div>
-    <div id="Compayments">
-		  <img src="../image/Compayments.png" alt="Compayments">
-		  <div id="CompaymentsNumber">
-		  <input id="money1" type="number" name="vegetables" placeholder="Goods-1" autofocus>
-		  <button onclick="myFunction()"> <i class="fa fa-plus"></i></button>
-		   <button id="button4" onclick="Counting()">Add</button>
-        </div>
-     </div>
-  
-
-</div>
-  <script type="text/javascript" src="jquery.js"></script>
-     <script  type="text/javascript"  src="jscript.js"></script>
+      <script src="jquery.js"></script>
+      <script src="jscript.js"></script>
 </body>
-</html>>
+</html>

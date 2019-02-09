@@ -1,16 +1,16 @@
 
 $(document).ready(function(){
-    $("#vegetables").click(function(){
-        $("#vegetablesNumber").fadeIn(1000);
+    $("#meals").click(function(){
+        $("#mealsNumber").fadeIn(1000);
     });
      $("#drinks").click(function(){
         $("#drinksNumber").fadeIn(1000);
     });
-       $("#Compayments").click(function(){
-        $("#CompaymentsNumber").fadeIn(1000);
+       $("#compayments").click(function(){
+        $("#compaymentsNumber").fadeIn(1000);
     });
-         $("#Cars").click(function(){
-        $("#CarsNumber").fadeIn(1000);
+         $("#transport").click(function(){
+        $("#transportNumber").fadeIn(1000);
     });
 });
 
@@ -25,16 +25,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#button1").click(function(){
-        $("#vegetables").animate({
+        $("#meals").animate({
             top:"300px"
         },1000);
         $("#drinks").animate({
             left:"300px"
         },1000);
-        $("#Cars").animate({
+        $("#transport").animate({
             left:"700px"
         },1000);
-        $("#Compayments").animate({
+        $("#compayments").animate({
             top:"10px"
         },1000);
     });
@@ -42,16 +42,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#button2").click(function(){
-        $("#vegetables").animate({
+        $("#meals").animate({
            left:"700px"
         },1000);
         $("#drinks").animate({
             top:"300px"
         },1000);
-        $("#Cars").animate({
+        $("#transport").animate({
             top:"10px"
         },1000);
-        $("#Compayments").animate({
+        $("#compayments").animate({
             left:"300px"
         },1000);
     });
@@ -59,16 +59,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#button4").click(function(){
-        $("#vegetables").animate({
+        $("#meals").animate({
            top:"10px"
         },1000);
         $("#drinks").animate({
             left:"700px"
         },1000);
-        $("#Cars").animate({
+        $("#transport").animate({
             left:"300px"
         },1000);
-        $("#Compayments").animate({
+        $("#compayments").animate({
            top:"300px"
         },1000);
     });
@@ -77,16 +77,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#button3").click(function(){
-        $("#vegetables").animate({
+        $("#meals").animate({
            left:"300px"
         },1000);
         $("#drinks").animate({
             top:"10px"
         },1000);
-        $("#Cars").animate({
+        $("#transport").animate({
             top:"300px"
         },1000);
-        $("#Compayments").animate({
+        $("#compayments").animate({
            left:"700px"
         },1000);
     });
